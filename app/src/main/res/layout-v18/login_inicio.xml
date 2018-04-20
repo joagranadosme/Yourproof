@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:layout_gravity="center_vertical"
+    tools:context=".Bienvenido">
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/progressBar" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_margin="5dp"
+        android:id="@+id/Cont1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:id="@+id/Cont1.1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:src="@drawable/logologin"
+                android:scaleType="fitCenter"
+                android:id="@+id/ImgLogo_login"
+                android:contentDescription="logologin"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:id="@+id/Cont1.2">
+
+            <AutoCompleteTextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/TxtEmail_login"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/prompt_email"
+                android:textColorHint="#453d3d"
+                android:textIsSelectable="false"
+                android:textAlignment="center"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+                android:singleLine="true"
+                android:gravity="center" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/TxtContraseña_login"
+                android:hint="Contraseña"
+                android:editable="false"
+                android:textAlignment="center"
+                android:textIsSelectable="false"
+                android:password="false"
+                android:phoneNumber="false"
+                android:textColorHint="#453d3d"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:id="@+id/Cont1.3"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/BtnIniciarsesion_login"
+                android:src="@drawable/e_btn_iniciar_sesion"
+                android:onClick="Iniciarsesion"
+                android:layout_gravity="center_horizontal"
+                style="@android:style/MediaButton"
+                android:scaleType="fitCenter"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp" />
+
+            <ImageButton
+                android:src="@drawable/button1"
+                style="@android:style/MediaButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/BtnRegistrarse_login"
+                android:onClick="Send"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

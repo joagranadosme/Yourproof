@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Cont_Principal">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/Cont_Encabezado" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:baselineAligned="false" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="YOURPROOF"
+                    android:id="@+id/textView3"
+                    android:textSize="@dimen/abc_text_size_medium_material"
+                    android:gravity="left|center"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/background_floating_material_light" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45" >
+
+                <ImageView
+                    android:src="@drawable/g"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageView7"
+                    android:scaleType="centerCrop" />
+            </LinearLayout>
+        </LinearLayout>
+    </TableLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:baselineAligned="false"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:background="@color/accent_material_dark"
+        android:id="@+id/Conr_Banner">
+
+        <ImageView
+            android:src="@drawable/recetasblanco"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/VRecetasI"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="RECETAS"
+            android:id="@+id/VRecetas"
+            android:textSize="@dimen/abc_text_size_small_material"
+            android:textColor="@color/Letra"
+            android:textAlignment="center"
+            android:layout_weight="4"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorAccent"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Cont_Iconos">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:layout_weight="1"
+                android:src="@drawable/alimentoscalientes"
+                android:id="@+id/BtnAlimentosC"
+                android:scaleType="fitCenter"
+                android:background="@color/transparent"
+                android:layout_width="73dp"
+                android:layout_height="73dp"
+                android:contextClickable="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="false"
+                android:onClick="AlimentosC" />
+
+            <ImageButton
+                android:layout_weight="1"
+                android:src="@drawable/comidafria"
+                android:layout_width="73dp"
+                android:layout_height="73dp"
+                android:id="@+id/BtnComidafria"
+                android:scaleType="fitCenter"
+                android:background="@color/transparent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentStart="true"
+                android:onClick="AlimentosF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ALIMENTOS CALIENTES"
+                android:id="@+id/VAlimentosC"
+                android:textAlignment="center"
+                android:textColor="@color/Letra"
+                android:layout_marginBottom="10dp"
+                android:textSize="10dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ALIMENTOS FRIOS"
+                android:id="@+id/VAlimentosF"
+                android:textColor="@color/Letra"
+                android:textAlignment="center"
+                android:layout_marginBottom="10dp"
+                android:textSize="10dp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:layout_weight="1"
+                android:src="@drawable/postres"
+                android:id="@+id/BtnPostres"
+                android:scaleType="fitCenter"
+                android:background="@color/transparent"
+                android:layout_width="73dp"
+                android:layout_height="73dp"
+                android:contextClickable="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="false"
+                android:onClick="Postres" />
+
+            <ImageButton
+                android:layout_weight="1"
+                android:src="@drawable/panaderias"
+                android:layout_width="73dp"
+                android:layout_height="73dp"
+                android:id="@+id/BtnPasteleria"
+                android:scaleType="fitCenter"
+                android:background="@color/transparent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentStart="true"
+                android:onClick="Panaderia" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="POSTRES"
+                android:id="@+id/VPostres"
+                android:textAlignment="center"
+                android:textColor="@color/Letra"
+                android:layout_marginBottom="10dp"
+                android:textSize="10dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="PANADERIA Y PASTELERIA"
+                android:id="@+id/textView13"
+                android:textColor="@color/Letra"
+                android:textAlignment="center"
+                android:layout_marginBottom="10dp"
+                android:textSize="10dp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_weight="1"
+                android:src="@drawable/cocteles"
+                android:layout_width="73dp"
+                android:layout_height="73dp"
+                android:id="@+id/BtnCoctelesR"
+                android:scaleType="fitCenter"
+                android:background="@color/transparent"
+                android:minHeight="200dp"
+                android:layout_column="1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:onClick="Cocteles" />
+
+            <ImageButton
+                android:src="@drawable/bebidas"
+                android:layout_width="73dp"
+                android:layout_height="73dp"
+                android:id="@+id/BtnBebidasR"
+                android:scaleType="fitCenter"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:onClick="Bebidas" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="COCTELES"
+                android:id="@+id/VCocteles"
+                android:textAlignment="center"
+                android:textColor="@color/Letra"
+                android:textSize="10dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="BEBIDAS"
+                android:id="@+id/BtnBebidasRe"
+                android:textColor="@color/Letra"
+                android:textAlignment="center"
+                android:textSize="10dp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_weight="1"
+                android:src="@drawable/recetasblanco"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:id="@+id/ImgInvisible"
+                android:scaleType="fitCenter"
+                android:background="@color/transparent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageButton
+                android:src="@drawable/otros"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:id="@+id/BtnOtrosR"
+                android:scaleType="fitCenter"
+                android:background="@color/transparent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="1"
+                android:onClick="Otros" />
+
+            <ImageView
+                android:layout_weight="1"
+                android:src="@drawable/recetasblanco"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:id="@+id/ImgInvisible2"
+                android:scaleType="fitCenter"
+                android:background="@color/transparent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </LinearLayout>
+    </TableLayout>
+
+</LinearLayout>

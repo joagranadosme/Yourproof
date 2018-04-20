@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:id="@+id/Cont1"
+        android:gravity="top|center_horizontal">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/Cont_Encabezado">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:baselineAligned="false" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="YOURPROOF"
+                        android:id="@+id/textView26"
+                        android:textSize="@dimen/abc_text_size_large_material"
+                        android:gravity="left|center"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/background_floating_material_light" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.1" >
+
+                    <ImageView
+                        android:src="@drawable/g"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView"
+                        android:scaleType="centerCrop" />
+                </LinearLayout>
+            </LinearLayout>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Cont1.1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_weight="1.5"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/accent_material_dark">
+
+                    <ImageButton
+                        android:layout_weight="1"
+                        android:src="@drawable/e_btn_cuenta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/BtnUsuario"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="fitCenter"
+                        android:background="@android:color/transparent"
+                        android:onClick="Cuenta"
+                        android:layout_marginTop="1dp" />
+
+                    <ImageButton
+                        android:layout_weight="1"
+                        android:src="@drawable/e_btn_saldo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/BtnDinero"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="fitCenter"
+                        android:background="@android:color/transparent"
+                        android:layout_marginTop="1dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="2.1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1">
+
+                    <ImageButton
+                        android:src="@drawable/e_btn_crear_receta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/BtnCrearReceta"
+                        android:scaleType="fitCenter"
+                        android:background="@android:color/transparent"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="1dp"
+                        android:onClick="CrearReceta" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:background="@color/accent_material_dark">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="CUENTA"
+                        android:id="@+id/VCuenta"
+                        android:textAlignment="center"
+                        android:textColor="@color/Letra"
+                        android:textSize="@dimen/abc_text_size_large_material"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/VDinero"
+                        android:textColor="@color/Letra"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/abc_text_size_large_material"
+                        android:layout_weight="1"
+                        android:text="SALDO" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.1">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="CREAR RECETA"
+                        android:id="@+id/VCrearReceta"
+                        android:textColor="@color/Letra"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="@dimen/abc_text_size_large_material" />
+                </LinearLayout>
+            </LinearLayout>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Cont1.2"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageButton
+
+                    android:layout_weight="1"
+                    android:src="@drawable/e_btn_recetas"
+                    android:id="@+id/BtnRecetas"
+                    android:scaleType="fitCenter"
+                    android:background="@color/transparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contextClickable="false"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="false"
+                    android:onClick="Recetas"
+                    android:layout_marginRight="10dp" />
+
+                <ImageButton
+                    android:layout_weight="1"
+                    android:src="@drawable/e_btn_chef"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/BtnChefs"
+                    android:scaleType="fitCenter"
+                    android:background="@color/transparent"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="false"
+                    android:layout_alignParentStart="true"
+                    android:onClick="Chefs"
+                    android:layout_marginLeft="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="RECETAS"
+                    android:id="@+id/VRecetas"
+                    android:textAlignment="center"
+                    android:textColor="@color/Letra"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="@dimen/abc_text_size_large_material"
+                    android:layout_marginRight="10dp" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="CHEF&apos;S"
+                    android:id="@+id/VChefs"
+                    android:textColor="@color/Letra"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="@dimen/abc_text_size_large_material"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:layout_weight="1"
+                    android:src="@drawable/e_btn_establecimientos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/BtnEstablecimientos"
+                    android:scaleType="fitCenter"
+                    android:background="@color/transparent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:onClick="Establecimiento"
+                    android:layout_marginRight="10dp" />
+
+                <ImageButton
+                    android:src="@drawable/e_btn_productos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/BtnProductos"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:onClick="Productos"
+                    android:layout_marginLeft="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="ESTABLECIEMIENTOS"
+                    android:id="@+id/VEstablecimientos"
+                    android:textAlignment="center"
+                    android:textColor="@color/Letra"
+                    android:textSize="@dimen/abc_text_size_large_material"
+                    android:layout_marginRight="10dp" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="PRODUCTOS"
+                    android:id="@+id/VProductos"
+                    android:textColor="@color/Letra"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/abc_text_size_large_material"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

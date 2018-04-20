@@ -1,0 +1,26 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="android:colorBackground">@color/colorPrimary</item>
+        <item name="android:textColorPrimaryInverse">@color/abc_search_url_text_pressed</item>
+    </style>
+
+    <style name="Tema1.Yourproof" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:colorBackground">@android:color/white</item>
+        <item name="android:statusBarColor">@color/material_grey_850</item>
+        <item name="android:textColorPrimary">@color/Letra</item>
+        <item name="android:textColorSecondary">@color/holo_red_light</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="android:colorForeground">@color/accent_material_dark</item>
+        <item name="android:textColorSecondaryInverse">@color/colorAccent</item>
+        <item name="android:windowBackground">@android:color/background_light</item>
+        <item name="android:textColorPrimaryInverse">@color/abc_search_url_text_selected</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="colorPrimaryDark">@color/primary_dark_material_dark</item>
+    </style>
+</resources>

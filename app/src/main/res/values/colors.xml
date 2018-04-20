@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fafae4</color>
+    <color name="colorPrimaryDark">#1b1918</color>
+    <color name="colorAccent">#6ec497</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="transparent">#00fafae4</color>
+    <color name="Letra">#391f0e</color>
+    <color name="abc_cab_background_top_mtrl_alpha">#391f0e</color>
+    <color name="holo_red_light">#83ef4a27</color>
+    <color name="white">#ef4a27</color>
+</resources>

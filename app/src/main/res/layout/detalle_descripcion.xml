@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ssm.usuario.yourproof.Crear_Receta">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Cont_1" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/Cont_Encabezado" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:baselineAligned="false" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="YOURPROOF"
+                        android:id="@+id/textView4"
+                        android:textSize="@dimen/abc_text_size_medium_material"
+                        android:gravity="left|center"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/background_floating_material_light" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.45" >
+
+                    <ImageView
+                        android:src="@drawable/g"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView2"
+                        android:scaleType="centerCrop" />
+                </LinearLayout>
+            </LinearLayout>
+        </TableLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:baselineAligned="false"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:id="@+id/Cont_banner">
+
+            <ImageView
+                android:layout_weight="1"
+                android:src="@drawable/crearreceta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView22"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="DESCRIPCIÓN RECETA"
+                android:id="@+id/Tv_Descripcion_receta"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:textColor="@color/Letra"
+                android:textAlignment="center"
+                android:layout_weight="3"
+                android:layout_marginTop="1dp"
+                android:background="@color/primary_material_dark"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Cont_principal">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:id="@+id/Cont_Descripcion"
+                android:gravity="top|center"
+                android:layout_gravity="top"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Txt_Nombre_receta"
+                    android:textColor="@color/Letra"
+                    android:layout_weight="2"
+                    android:hint="Escribe el nombre de tu receta"
+                    android:textColorHint="#453d3d"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:gravity="center"
+                    android:nestedScrollingEnabled="true" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/scrollView2"
+                    android:layout_gravity="top|left"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:textColorHint="#453d3d"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/TxtDescripcion_Receta"
+                        android:hint="Describe aqui la preparación de tu receta"
+                        android:textSize="@dimen/abc_text_size_small_material"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center"
+                        android:nestedScrollingEnabled="true" />
+                </ScrollView>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/scrollView"
+                    android:layout_gravity="top|left"
+                    android:layout_weight="2">
+
+                    <EditText
+                        android:textColorHint="#453d3d"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/Txt_Ingredientes"
+                        android:hint="Ingredientes"
+                        android:textSize="@dimen/abc_text_size_small_material"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center"
+                        android:nestedScrollingEnabled="true" />
+                </ScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.9"
+                android:id="@+id/Cont_tv_ingrediente"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="INGREDIENTE"
+                    android:id="@+id/Tv_ingrediente"
+                    android:textColor="@color/Letra"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="PESO"
+                    android:id="@+id/Tv_peso"
+                    android:textColor="@color/Letra"
+                    android:layout_weight="4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.8"
+                android:id="@+id/Cont_Ingredientes"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Txt_Cingrediente"
+                    android:layout_weight="1"
+                    android:hint="Escribe aqui el ingrediente"
+                    android:textColorHint="#453d3d"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:nestedScrollingEnabled="true" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Txt_Cpeso"
+                    android:layout_weight="4"
+                    android:hint="gr"
+                    android:textColorHint="#453d3d"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:nestedScrollingEnabled="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/Cont_BtnIngrediente"
+                android:layout_weight="1.9"
+                android:layout_marginBottom="5dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="AGREGAR INGREDIENTE"
+                    android:id="@+id/Btn_Ingrediente"
+                    android:background="@color/white"
+                    android:textColor="@color/background_floating_material_light"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_weight="1.8"
+                    android:onClick="Ingrediente" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/Cont_Boton_guardar"
+                android:layout_weight="1.85"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Guardar"
+                    android:id="@+id/Btn_Crear_receta"
+                    android:background="@color/white"
+                    android:textColor="@color/background_floating_material_light"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginRight="90dp"
+                    android:onClick="guardar" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ssm.usuario.yourproof.Editar_Cuenta">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/Cont_Encabezado">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:baselineAligned="false" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="YOURPROOF"
+                        android:id="@+id/textView25"
+                        android:textSize="@dimen/abc_text_size_small_material"
+                        android:gravity="left|center"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/background_floating_material_light" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:src="@drawable/g"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView"
+                        android:layout_weight="0.3"
+                        android:scaleType="centerCrop" />
+                </LinearLayout>
+            </LinearLayout>
+        </TableLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Cont_Principal">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Cont_Formulario"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:hint="Nombre"
+                        android:ems="10"
+                        android:id="@+id/E_Txt_Nombre"
+                        android:textColor="@color/abc_secondary_text_material_light"
+                        android:textColorHint="#453d3d"
+                        android:textSize="10sp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:hint="Apellido"
+                        android:ems="10"
+                        android:id="@+id/E_Txt_Apellido"
+                        android:textColor="@color/abc_secondary_text_material_light"
+                        android:layout_gravity="center_horizontal"
+                        android:textColorHint="#453d3d"
+                        android:textSize="10sp" />
+
+                    <EditText
+                        android:id="@+id/E_Txt_Contraseña"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Contraseña"
+                        android:imeActionId="@+id/login"
+                        android:imeActionLabel="@string/action_sign_in_short"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColorHint="#453d3d"
+                        android:textSize="10sp"
+                        android:textColor="@color/abc_secondary_text_material_light" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:id="@+id/E_Txt_Celular"
+                        android:hint="Celular"
+                        android:textColor="@color/abc_secondary_text_material_light"
+                        android:textColorHint="#453d3d"
+                        android:textSize="10sp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/E_Txt_Tarjeta"
+                        android:textColor="@color/abc_secondary_text_material_light"
+                        android:textColorHint="#453d3d"
+                        android:textSize="10sp"
+                        android:hint="Tarjeta de credito"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/E_Txt_Cuenta"
+                        android:textColor="@color/abc_secondary_text_material_light"
+                        android:textColorHint="#453d3d"
+                        android:textSize="10sp"
+                        android:hint="Número de cuenta bancaria"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:id="@+id/Tv_Email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_email"
+                        android:singleLine="false"
+                        android:textColorHint="#453d3d"
+                        android:textSize="10sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="3dp"
+                        android:textColor="@color/abc_secondary_text_material_light" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="date"
+                        android:ems="10"
+                        android:id="@+id/Tv_Fecha"
+                        android:textColor="@color/abc_secondary_text_material_light"
+                        android:hint="Fecha Nacimiento"
+                        android:textColorHint="#453d3d"
+                        android:textSize="10sp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:focusable="false"
+                        android:clickable="false">
+
+                        <Spinner
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Lst_dias"
+                            android:layout_weight="1.2"
+                            android:gravity="center" />
+
+                        <Spinner
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Lst_meses"
+                            android:layout_weight="1"
+                            android:gravity="center" />
+
+                        <Spinner
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2"
+                            android:id="@+id/Lst_años"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1">
+
+                <LinearLayout
+                    android:id="@+id/Cont_FotoP"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="0.9"
+                    android:baselineAligned="false">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageButton
+                            android:src="@drawable/usuario1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/imageButton"
+                            android:scaleType="fitCenter"
+                            android:background="@android:color/transparent" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NOMBRE USUARIO"
+                            android:id="@+id/TvE_NomUsu"
+                            android:textColor="@color/Letra"
+                            android:textSize="11dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.4"
+                    android:id="@+id/Cont_Btn_FotoP"
+                    android:baselineAligned="false"
+                    android:layout_marginBottom="5dp" >
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="ACTUALIZAR FOTO PERFIL"
+                        android:id="@+id/Btn_FotoP"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:textColor="@color/background_floating_material_light"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:textSize="11sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.3"
+                    android:id="@+id/Cont_Btn_Guardar"
+                    android:baselineAligned="false"
+                    android:layout_marginBottom="5dp" >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="AGREGAR DOCUMENTOS"
+                            android:id="@+id/Btn_Documentos"
+                            android:background="@color/white"
+                            android:textColor="@color/background_floating_material_light"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:onClick="AgregarD"
+                            android:layout_marginBottom="1dp"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="GUARDAR TODO"
+                            android:id="@+id/Btn_Guardar"
+                            android:background="@color/white"
+                            android:textColor="@color/background_floating_material_light"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:onClick="Guardartodo"
+                            android:layout_marginBottom="1dp"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

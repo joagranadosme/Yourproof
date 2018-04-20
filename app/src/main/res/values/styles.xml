@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Botones_principales">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">115dp</item>
+        <item name="android:layout_gravity">left|top</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="android:colorBackground">@color/colorPrimary</item>
+        <item name="android:textColorPrimaryInverse">@color/abc_search_url_text_pressed</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Def" parent="android:Theme">
+        <item name="colorAccent">@android:color/holo_red_light</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="Tema1.Yourproof" parent="Theme.AppCompat.NoActionBar" >
+        <item name="android:colorBackground">@android:color/white</item>
+        <item name="android:textColorPrimary">@color/Letra</item>
+        <item name="android:textColorSecondary">@color/holo_red_light</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="android:colorForeground">@color/accent_material_dark</item>
+        <item name="android:textColorSecondaryInverse">@color/colorAccent</item>
+        <item name="android:windowBackground">@android:color/background_light</item>
+        <item name="android:textColorPrimaryInverse">@color/abc_search_url_text_selected</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="colorPrimaryDark">@color/primary_dark_material_dark</item>
+    </style>
+
+    <style name="relativo"></style>
+
+</resources>

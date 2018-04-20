@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:id="@+id/Cont1"
+        android:gravity="top|center_horizontal">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/Cont_Encabezado">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:baselineAligned="false" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="YOURPROOF"
+                        android:id="@+id/textView18"
+                        android:textSize="@dimen/abc_text_size_medium_material"
+                        android:gravity="left|center"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/background_floating_material_light" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.45" >
+
+                    <ImageView
+                        android:src="@drawable/g"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView"
+                        android:scaleType="centerCrop" />
+                </LinearLayout>
+            </LinearLayout>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Cont1.1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:baselineAligned="false"
+                android:id="@+id/Iconos1.1">
+
+                <LinearLayout
+                    android:layout_weight="1.5"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/accent_material_dark">
+
+                    <ImageButton
+                        android:layout_weight="1"
+                        android:src="@drawable/dinero"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:id="@+id/BtnDinero"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="fitCenter"
+                        android:background="@android:color/transparent"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="2dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:baselineAligned="false"
+                android:gravity="center"
+                android:id="@+id/Nombres1.1">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/accent_material_dark">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/VDinero"
+                        android:textColor="@color/Letra"
+                        android:textAlignment="center"
+                        android:textSize="13sp"
+                        android:text="SALDO" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Cont1.2"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/Cont_Saldo">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="$ 0.00"
+                    android:id="@+id/Tv_Saldo"
+                    android:textColor="@color/Letra"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:id="@+id/linearLayout"
+                android:baselineAligned="false"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="RECARGAR"
+                    android:id="@+id/Btn_Recargar_dinero"
+                    android:layout_weight="1"
+                    android:textColor="@color/background_floating_material_light"
+                    android:background="@color/white"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="14dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:onClick="Recargar" />
+            </LinearLayout>
+        </TableLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
